@@ -6,6 +6,8 @@ minetest.register_on_joinplayer(function(player)
         end
 end)
 
+timer = 0
+
 minetest.register_globalstep(function ( dtime )
     timer = timer + dtime;
     if (timer >= 60.0) then
